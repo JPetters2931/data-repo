@@ -141,10 +141,12 @@ class CollectionsController < ApplicationController
   end
 
   def dataset_download
-    time_stamp = DateTime.now.strftime('%Q')
+    time_stamp = Time.now.strftime("%Y%m%d")
     download_generator = DownloadGenerator.new(time_stamp)
     download_generator.make_archive
     admin_download = (!params[:admin].blank? && params[:admin] == "admin")
+    collection =  Collection.find(params[:id])
+    raise collection.inspect
     download_generator.generate_dataset_download(params[:id], admin_download)
     zip_file = download_generator.zip
     while !File.file? zip_file

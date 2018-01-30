@@ -3,7 +3,7 @@ class DashboardController < ApplicationController
   require 'vtech_data/download_generator'
 
   def admin_metadata_download
-    time_stamp = DateTime.now.strftime('%Q')
+    time_stamp = Time.now.strftime("%Y%m%d")
     csv_generator = DownloadGenerator.new(time_stamp)
     csv_generator.make_archive
     csv_generator.generate_all_metadata('Collection')
