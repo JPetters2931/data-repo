@@ -2,8 +2,9 @@
 
 ## Overview
 
-The University Libraries at Virginia Tech is continually attempting to explore new use cases for the VTechData repository, brainstorm ways to encourage more submissions, and find connections and integrations to make the repository more useful.  Throughout these efforts we have realized that the ability to pass objects from the OSF into the VTechData repository would provide a very large benefit to researchers in the community, allowing them to work collaboratively within the OSF and take advantage of the publishing and curation services offered through the Libraries. Pushed to production in early 2018, we project that this new service integration will allow researchers to more easily benefit from both the OSF and the data repository at Virginia Tech.
+The University Libraries at Virginia Tech is continually attempting to explore new use cases for the VTechData repository, brainstorm ways to encourage more submissions, and find connections and integrations to make the repository more useful.  Throughout these efforts we have realized that the ability to pass objects from the Open Science Framework (OSF, http://osf.io/) into the VTechData repository(https://data.lib.vt.edu/) would provide a large benefit to researchers in the community, allowing them to work collaboratively within the OSF and take advantage of the publishing and curation services offered through the Libraries. 
 
+The code in this repo adds to a Samvera application the functionality to import OSF objects directly into Samvera. We project that this new service integration will allow researchers to more easily benefit from both the OSF and the data repository at Virginia Tech, and could be useful for others wishing to more tightly connect Samvera applications to the OSF.
 
 ## Implementation Notes:
 
